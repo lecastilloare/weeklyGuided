@@ -19,6 +19,8 @@ const differenceInLength = lengthOne - lengthTwo;
 
 console.log(`The name ${nameOne} is longer than the name ${nameTwo} by ${differenceInLength} characters.`);
 
+// THE BELOW SECTION CONTAINS THE MEDIUM PORTION OF THE ASSIGNMENT VVVVVVV
+
 let userInput = prompt("Please type a message!");
 
 const checkTone = function (userInput) {
