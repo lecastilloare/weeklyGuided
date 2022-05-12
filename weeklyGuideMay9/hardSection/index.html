@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom Manipulation Hard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: red;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+    .bg-red {
+      background-color: red;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="button-red">
+    Turn it red!
+  </button>
+  <button class="button-white">
+    Turn it white!
+  </button>
+  <script>
+
+    // DONE
+    // Do Stuff Here
+
+    const backgroundColor = document.querySelector("body");
+    const redButton = document.querySelector(".button-red");
+    const whiteButton = document.querySelector(".button-white");
+
+  // Adds the class with the background color we want and removes the previous one so the user can toggle back and forth
+    window.updateTheBackground = function (addClassName, removeClassName) {
+      backgroundColor.classList.add(addClassName);
+      backgroundColor.classList.remove(removeClassName);
+    }
+
+  /// Creating callback functions so we can use them in the .addEventListener()and not invoke them right away
+  
+    const turnRed = () => window.updateTheBackground("bg-red", "bg-white");
+    const turnWhite = () => window.updateTheBackground("bg-white", "bg-red")
+
+
+    // The below will happen if we click the red button
+    redButton.addEventListener("click", turnRed);
+
+    // The below will happen if we click the white button
+    whiteButton.addEventListener("click", turnWhite);
+
+  </script>
+</body>
+
+</html>
