@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* Below is the css for the checkerboard */
+.main-checkerboard {
+    display: flex;
+    width: 576px;
+    border: solid;
+}
+
+.square-colorA {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.square-colorB {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 1.5rem;
+    background-color: blue;
+}
+
+/* Below is the css for the american flag */
+
+table {
+    margin-top: 2rem;
+    width: auto;
+    border-collapse: collapse;
+}
+
+td {
+padding: .5rem;
+border:none;
+
+}
+.red-row {
+
+    background-color: #b22133;
+    color: #b22133;
+    border: 0px;
+}
+
+.white-row {
+    background-color: white;
+    color: white;
+}
+
+.star {
+    background-image: url(/star.png);
+    background-color: #3d3b6e;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    color: none;
+    
+}
+
+.blue {
+    background-color: #3d3b6e;
+    color: #3d3b6e;
+}
+
+/* The css for the grid portion of the assignment */
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+margin-top: 5rem;
+}
+
+.grid-container div {
+    height: 15rem;
+    border: #b22133 solid ;
+    }
