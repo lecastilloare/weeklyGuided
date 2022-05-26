@@ -1,3 +1,22 @@
+a:link {
+    text-decoration: none;
+    color: #335234;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #335234;
+}
+
+a:active{
+    text-decoration: none;
+    color: #335234;
+}
+
+a:hover {
+    color: #d07ca9;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .8rem;
@@ -34,10 +53,11 @@ table {
 }
 
 td {
-padding: .5rem;
-border:none;
+    padding: .5rem;
+    border: none;
 
 }
+
 .red-row {
 
     background-color: #b22133;
@@ -51,12 +71,12 @@ border:none;
 }
 
 .star {
-    background-image: url(/star.png);
+    background-image: url(/images/star.png);
     background-color: #3d3b6e;
     background-size: 30px;
     background-repeat: no-repeat;
     color: none;
-    
+
 }
 
 .blue {
@@ -67,12 +87,41 @@ border:none;
 /* The css for the grid portion of the assignment */
 
 .grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-margin-top: 5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 .grid-container div {
-    height: 15rem;
-    border: #b22133 solid ;
-    }
+    height: 35rem;
+    background-color: white;
+    
+}
+.grid-item {
+    border: solid #c1dfa5 3px; 
+}
+
+.grid-item img {
+    height: 12rem;
+    margin-top: 2rem;
+}
+
+.grid-item h1 {
+    font-size: 1.4rem;
+}
+
+.grid-item h2 {
+    font-size: 1.2rem;
+    color: #335234;
+
+}
+.grid-item p {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #335234;
+}
+
+.header {
+    margin-top: 3rem;
+}
